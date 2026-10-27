@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rose & Ritual — Aesthetic Skincare</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="announcement-bar" id="announcement">جاري التحميل...</div>
+
+  <header>
+    <a href="#" class="logo" id="storeName">Rose & Ritual</a>
+    <ul class="nav-links">
+      <li><a href="#">الرئيسية</a></li>
+      <li><a href="#products">المنتجات</a></li>
+      <li><a href="admin.html">لوحة التحكم</a></li>
+    </ul>
+    <div class="cart-icon" onclick="toggleCart(true)">
+      🛒 السلة <span class="cart-count" id="cartCount">0</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1 id="heroTitle">طقوسك اليومية للعناية بالبشرة</h1>
+      <p id="heroSubtitle">اكتشفي منتجاتنا الأنيقة المصممة خصيصاً لمنحك مظهر نضر وصحي.</p>
+      <a href="#products" class="btn">تسوقي الآن</a>
+    </div>
+    <div class="hero-img">
+      <img id="heroImg" src="" alt="Hero Skincare">
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <h2 class="section-title">أفضل المنتجات الموصى بها</h2>
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>سلة التسوق</h3>
+      <button onclick="toggleCart(false)" style="background:none; border:none; font-size:1.2rem; cursor:pointer;">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div>
+      <h4>المجموع: <span id="cartTotal">0 MAD</span></h4>
+      <button onclick="sendToWhatsApp()" class="btn" style="width: 100%; margin-top: 15px; background: #25D366;">إتمام الطلب عبر الواتساب</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Rose & Ritual. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
